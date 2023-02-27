@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: rgb(5, 5, 46);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hding-div {
+    color: white;
+    font-family: cursive;
+    font-weight: bolder;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input {
+    width: 350px;
+    height: 30px;
+    border-radius: 1rem;
+    border: none;
+    /* margin: 1rem; */
+    font-size: large;
+    outline-style: none;
+    margin-bottom: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.pls {
+    margin-left: -2.7rem;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.eacitem {
+    width: 20.5rem;
+    height:fit-content;
+    border: none;
+    font-size: large;
+    outline-style: none;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: rgb(75, 73, 73);
+    margin-right: -1.8rem;
+    margin-top: 0.4rem;
+    position: relative;
+    text-align:left;
+    overflow-wrap: break-word;
+
+
 }
+.eacitem:hover{
+    background-color:rgb(43, 42, 42);
+    color: white;
+}
+.trsh{
+    position: absolute;
+ top: 5px;
+ left: 300px;
+ cursor: pointer;
+ color: red;
+
+}
+
+.btn{
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    outline-style: none;
+    background-image: linear-gradient(rgb(104, 104, 163),rgb(36, 7, 12),rgb(23, 22, 22));
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+ /* media query ......... */  
+
+
+ @media screen and (max-width:1040px) {
+    .main-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+    }
+    .hding-div{
+        font-size:13px;
+        text-align: center;
+    }
+    .input{
+        width: 20rem;
+    }
+    .eacitem{
+        width:20rem ;
+        border-radius: 10px;
+        margin-left: 27px;
+        overflow-wrap: break-word;
+        height: fit-content;
+    }
+
+    .btn{
+        padding: 2px 10px;
+        margin: 30px;
+        align-items: center;
+    }
+ }
+
+ @media screen and (max-width:720px) {
+    .main-div{
+        width: 17rem;
+    }
+    .hding-div{
+        font-size:8px;
+        text-align: center;
+    }
+    .input{
+        width: 18rem;
+    }
+   
+    .btn{
+        padding: 1.6px 8px;
+        margin: 30px;
+        align-items: center;
+    }
+ }
